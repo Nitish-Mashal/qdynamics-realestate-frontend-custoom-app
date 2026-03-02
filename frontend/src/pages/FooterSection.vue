@@ -118,7 +118,7 @@
 
 
 <script setup>
-import Footbar from '../footbar.vue'
+// import Footbar from '../footbar.vue'
 import { ref, computed } from "vue";
 
 const email = ref("");
