@@ -17,19 +17,19 @@
                     <ul class="flex items-center space-x-8">
                         <!-- Example for Desktop Navigation -->
                         <li>
-                            <router-link to="/" class="text-gray-800 no-underline">
+                            <router-link to="/" class="text-gray-800 no-underline metal-regular">
                                 Destiny
                             </router-link>
                         </li>
 
                         <li>
-                            <router-link to="/about-us" class="text-gray-800 no-underline">
+                            <router-link to="/about-us" class="text-gray-800 no-underline metal-regular">
                                 About Us
                             </router-link>
                         </li>
 
                         <li class="relative group">
-                            <div class="text-gray-800 no-underline flex items-center space-x-2">
+                            <div class="text-gray-800 no-underline metal-regular flex items-center space-x-2">
                                 Services
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20"
                                     fill="currentColor">
@@ -42,13 +42,13 @@
                                 class="absolute hidden group-hover:block bg-white border-0 rounded shadow-md w-60 z-50 p-3">
                                 <li>
                                     <router-link to="/construction"
-                                        class="block py-2 px-4 text-gray-800 no-underline text-[15px]">
+                                        class="block py-2 px-4 text-gray-800 no-underline metal-regular text-[15px]">
                                         Construction
                                     </router-link>
                                 </li>
                                 <li>
                                     <router-link to="/interiors"
-                                        class="block py-2 px-4 text-gray-800 no-underline text-[15px]">
+                                        class="block py-2 px-4 text-gray-800 no-underline metal-regular text-[15px]">
                                         Interiors
                                     </router-link>
                                 </li>
@@ -56,8 +56,8 @@
                         </li>
 
                         <li class="relative group">
-                            <div class="text-gray-800 no-underline flex items-center">
-                                <router-link to="/listing" class="text-gray-800 no-underline">
+                            <div class="text-gray-800 no-underline metal-regular flex items-center">
+                                <router-link to="/listing" class="text-gray-800 no-underline metal-regular">
                                     Projects
                                 </router-link>
 
@@ -73,14 +73,28 @@
                                 class="absolute hidden group-hover:block bg-white border-0 rounded shadow-md w-60 z-50 p-3">
                                 <li>
                                     <router-link :to="{ path: '/listing', query: { status: 'New' } }"
-                                        class="block py-2 px-4 text-gray-800 no-underline  text-[15px]">
+                                        class="block py-2 px-4 text-gray-800 no-underline metal-regular  text-[15px]">
                                         New
                                     </router-link>
                                 </li>
 
                                 <li>
+                                    <router-link :to="{ path: '/listing', query: { status: 'Upcoming' } }"
+                                        class="block py-2 px-4 text-gray-800 no-underline metal-regular  text-[15px]">
+                                        Upcoming
+                                    </router-link>
+                                </li>
+
+                                <li>
+                                    <router-link :to="{ path: '/listing', query: { status: 'Ongoing' } }"
+                                        class="block py-2 px-4 text-gray-800 no-underline metal-regular  text-[15px]">
+                                        Ongoing
+                                    </router-link>
+                                </li>
+
+                                <li>
                                     <router-link :to="{ path: '/listing', query: { status: 'Sold Out' } }"
-                                        class="block py-2 px-4 text-gray-800 no-underline  text-[15px]">
+                                        class="block py-2 px-4 text-gray-800 no-underline metal-regular  text-[15px]">
                                         Completed
                                     </router-link>
                                 </li>
@@ -88,7 +102,7 @@
                         </li>
 
                         <li>
-                            <router-link to="/gallery-page" class="text-gray-800 no-underline">
+                            <router-link to="/gallery-page" class="text-gray-800 no-underline metal-regular">
                                 Gallery
                             </router-link>
                         </li>
@@ -96,7 +110,7 @@
 
 
                         <li>
-                            <router-link to="/contact-us" class="block py-2 text-gray-800 no-underline">
+                            <router-link to="/contact-us" class="block py-2 text-gray-800 no-underline metal-regular">
                                 Contact
                             </router-link>
                         </li>
@@ -175,7 +189,7 @@
                         <ul v-if="isOpen" ref="mobileMenu"
                             class="absolute right-0 mt-2 bg-white w-60 shadow-lg rounded-md px-6 py-4 space-y-2 font-regular z-50">
                             <!-- Home -->
-                            <router-link to="/" class="block font-medium text-gray-800 no-underline"
+                            <router-link to="/" class="block font-medium text-gray-800 no-underline metal-regular"
                                 @click="closeMobileMenu">
                                 Destiny
                             </router-link>
@@ -183,8 +197,8 @@
                             <!-- Listing Dropdown -->
                             <li>
                                 <button @click="toggleListing"
-                                    class="w-full flex justify-between items-center font-medium text-gray-800 no-underline ">
-                                    <router-link to="/listing" class="text-gray-800 no-underline"
+                                    class="w-full flex justify-between items-center font-medium text-gray-800 no-underline metal-regular ">
+                                    <router-link to="/listing" class="text-gray-800 no-underline metal-regular"
                                         @click="closeMobileMenu">
                                         Projects
                                     </router-link>
@@ -200,12 +214,12 @@
 
                                 <ul v-show="isListingOpen" class="mt-2 space-y-2">
                                     <router-link :to="{ path: '/listing', query: { status: 'New' } }"
-                                        class="block text-gray-800 no-underline" @click="closeMobileMenu">
+                                        class="block text-gray-800 no-underline metal-regular" @click="closeMobileMenu">
                                         New
                                     </router-link>
                                     <li>
                                         <router-link :to="{ path: '/listing', query: { status: 'Sold Out' } }"
-                                            class="block text-gray-800 no-underline" @click="closeMobileMenu">
+                                            class="block text-gray-800 no-underline metal-regular" @click="closeMobileMenu">
                                             Completed
                                         </router-link>
                                     </li>
@@ -214,14 +228,14 @@
 
                             <!-- About -->
                             <li>
-                                <router-link to="/about-us" class="block font-medium text-gray-800 no-underline"
+                                <router-link to="/about-us" class="block font-medium text-gray-800 no-underline metal-regular"
                                     @click="closeMobileMenu">
                                     About Us
                                 </router-link>
                             </li>
 
                             <li>
-                                <router-link to="/gallery-page" class="block font-medium text-gray-800 no-underline"
+                                <router-link to="/gallery-page" class="block font-medium text-gray-800 no-underline metal-regular"
                                     @click="closeMobileMenu">
                                     Gallery
                                 </router-link>
@@ -230,7 +244,7 @@
                             <!-- Services Dropdown -->
                             <li>
                                 <button @click="toggleServices"
-                                    class="w-full flex justify-between items-center font-medium text-gray-800 no-underline">
+                                    class="w-full flex justify-between items-center font-medium text-gray-800 no-underline metal-regular">
                                     Services
                                     <span :class="{ 'rotate-180': isServicesOpen }" class="transition">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 20 20"
@@ -245,13 +259,13 @@
                                 <ul v-show="isServicesOpen" class="mt-2 space-y-2">
                                     <li>
                                         <router-link to="/construction"
-                                            class="block text-gray-700 text-gray-800 no-underline"
+                                            class="block text-gray-700 text-gray-800 no-underline metal-regular"
                                             @click="closeMobileMenu">
                                             Construction
                                         </router-link>
                                     </li>
                                     <li>
-                                        <router-link to="/interiors" class="block text-gray-800 no-underline"
+                                        <router-link to="/interiors" class="block text-gray-800 no-underline metal-regular"
                                             @click="closeMobileMenu">
                                             Interiors
                                         </router-link>
@@ -261,7 +275,7 @@
 
                             <!-- Contact -->
                             <li>
-                                <router-link to="/contact-us" class="block font-medium text-gray-800 no-underline"
+                                <router-link to="/contact-us" class="block font-medium text-gray-800 no-underline metal-regular"
                                     @click="closeMobileMenu">
                                     Contact
                                 </router-link>
@@ -434,6 +448,14 @@ onBeforeUnmount(() => {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Metal&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.metal-regular {
+  font-family: "Metal", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
 .fade-slide-enter-active,
 .fade-slide-leave-active {
     transition: all 0.2s ease;

@@ -31,7 +31,7 @@
                     </div>
 
                     <!-- Right Text -->
-                    <div class="col-md-4 d-flex flex-column justify-content-center text-sm">
+                    <div class="col-md-5 d-flex flex-column justify-content-center">
                         <div class="text-7xl font-semibold mb-3">{{ constructionData.secondSection.heading }}</div>
 
                         <p>There are many variations of content available, but <span
@@ -43,7 +43,6 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="col-md-1"></div>
                 </div>
             </div>
         </div>
