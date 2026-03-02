@@ -1,5 +1,6 @@
 <template>
     <div class="md:px-5 py-3">
+        <!-- <footer class="bg-gray-50 rounded-2xl shadow-sm mb-20 md:mb-0"> -->
         <footer class="bg-gray-50 rounded-2xl shadow-sm">
             <!-- Top -->
             <div class="flex flex-col md:flex-row items-center justify-between px-8 py-6">
@@ -40,7 +41,7 @@
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 px-8 py-6 pb-5 pt-5">
                 <!-- Subscribe -->
                 <div class="col-span-1 md:col-span-2">
-                    <h4 class="font-semibold mb-3 text-sm">Subscribe</h4>
+                    <h4 class="font-semibold mb-3 text-[16px]">Subscribe</h4>
 
                     <div class="flex items-center mb-2">
                         <input v-model="email" type="email" placeholder="Your e-mail"
@@ -53,11 +54,11 @@
                         </button>
                     </div>
 
-                    <p v-if="message" class="text-xs mt-1" :class="statusClass">
+                    <p v-if="message" class=" mt-1" :class="statusClass">
                         {{ message }}
                     </p>
 
-                    <p class="text-xs text-gray-800 pt-2">
+                    <p class=" text-gray-800 pt-2 text-[14px]">
                         Destiny Promoters have been in the diversified business of <br />
                         real estate sector over the last 5 years.
                     </p>
@@ -65,9 +66,9 @@
 
                 <!-- Quick Links -->
                 <div class="col-span-1">
-                    <div class="font-semibold mb-3 text-sm">Quick Links</div>
-                    <div class="space-y-2 text-xs text-black">
-                        <div><router-link to="/listing" class="text-black no-underline">Listing</router-link></div>
+                    <div class="font-semibold mb-3 text-[16px]">Quick Links</div>
+                    <div class="space-y-2  text-black text-[14px]">
+                        <div><router-link to="/listing" class="text-black no-underline">Projects</router-link></div>
                         <div><router-link to="/about-us" class="text-black no-underline">About</router-link></div>
                         <div><router-link to="/gallery-page" class="text-black no-underline">Gallery</router-link></div>
                         <div><router-link to="/construction" class="text-black no-underline">Construction</router-link>
@@ -83,19 +84,19 @@
 
                 <!-- Contact Us -->
                 <div class="col-span-1">
-                    <div class="font-semibold mb-3 text-sm">Contact Us</div>
-                    <a href="mailto:sales@destinypromoters.in" class="block text-xs text-black no-underline">
+                    <div class="font-semibold mb-3 text-[16px]">Contact Us</div>
+                    <a href="mailto:sales@destinypromoters.in" class="block text-[14px] text-black no-underline">
                         sales@destinypromoters.in
                     </a>
-                    <a href="tel:+919686450917" class="block text-xs mt-1 text-black no-underline">
+                    <a href="tel:+919686450917" class="block mt-1 text-[14px] text-black no-underline">
                         +91 96864 50917
                     </a>
                 </div>
 
                 <!-- Address -->
                 <div class="col-span-1">
-                    <div class="font-semibold mb-3 text-sm">Our Address</div>
-                    <div class="text-xs text-black leading-snug">
+                    <div class="font-semibold mb-3 text-[16px]">Our Address</div>
+                    <div class=" text-black leading-snug text-[14px]">
                         #97/B (New #1/2), 1st Floor, Jayanagar
                         7th Block, Bangalore - 560082
                     </div>
@@ -105,17 +106,19 @@
             <hr class="border-gray-400" />
 
             <!-- Bottom -->
-            <div class="flex flex-col md:flex-row items-center px-8 py-2 text-xs text-black gap-10 md:gap-40 pb-5">
+            <div class="flex flex-col md:flex-row items-center px-8 py-2 text-black gap-10 md:gap-40 pb-5 text-[15px]">
                 <span>Copyright © {{ currentYear }}. Destiny Promoters</span>
                 <a href="https://quantumberg.com/" class="text-black"><span>Powered By: Quantumberg Technologies Pvt
                         Ltd</span></a>
             </div>
+            <!-- <Footbar /> -->
         </footer>
     </div>
 </template>
 
 
 <script setup>
+import Footbar from '../footbar.vue'
 import { ref, computed } from "vue";
 
 const email = ref("");

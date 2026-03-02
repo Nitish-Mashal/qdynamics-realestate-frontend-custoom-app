@@ -11,10 +11,8 @@
             </div>
             <!-- Right: Text -->
             <div class="col-md-5">
-                <div class="font-semibold text-7xl">Help you secure your <br> <span
-                        class="font-semibold text-7xl pb-2">Dream
-                        Home</span></div>
-                <p class="text-sm">We all need a place we can call home, where we can feel safe and
+                <div class="font-semibold text-7xl mb-3">Help you secure your Dream Home</div>
+                <p class="">We all need a place we can call home, where we can feel safe and
                     comfortable.While life takes you to unexpected places, love brings you home. What sets Destiny
                     Promoters
                     apart from other companies is the world class sales and marketing service we provide to the most

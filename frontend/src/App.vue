@@ -7,11 +7,13 @@
     </div>
 
     <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/919686450917" target="_blank" rel="noopener noreferrer" class="fixed bottom-5 right-5 z-50">
+    <!-- <a href="https://wa.me/919686450917" target="_blank" rel="noopener noreferrer" class="hidden md:block fixed bottom-20 right-5 z-50"> -->
+    <a href="https://wa.me/919686450917" target="_blank" rel="noopener noreferrer" class="fixed bottom-20 right-5 z-50">
       <img src="./assets/images/WhatsApp.png" alt="WhatsApp"
         class="w-10 rounded-full shadow-lg hover:scale-110 transition-transform duration-300" />
     </a>
 
+    <Scrolltotop />
     <FooterSection />
   </div>
 </template>
@@ -19,6 +21,7 @@
 <script setup>
 import Navbar from './pages/Navbar.vue'
 import FooterSection from './pages/FooterSection.vue'
+import Scrolltotop from './Scrolltotop.vue'
 </script>
 
 <style>

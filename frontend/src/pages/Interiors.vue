@@ -101,12 +101,12 @@
                     </div>
 
                     <!-- Right Text -->
-                    <div class="col-md-6 d-flex flex-column justify-content-center text-sm px-5">
+                    <div class="col-md-6 d-flex flex-column justify-content-center px-5">
                         <div class="text-[250%] font-bold mb-3 text-[#E7C873]">
                             Turning Houses into Homes, One Design at a Time
                         </div>
 
-                        <div class="text-[110%] mb-4">
+                        <div class=" mb-4">
                             With every project we undertake, We are committed to turning houses
                             into homes, One design at a time
                         </div>
